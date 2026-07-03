@@ -18,7 +18,8 @@ function Certification() {
 
           {/* Certificate 1 */}
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100 shadow">
+            <div className="card h-100 shadow"
+            style={{ backgroundColor: "#f8f9fa" }} >
 
               <img
                 src={buildAI}
@@ -52,7 +53,8 @@ function Certification() {
 
           {/* Certificate 2 */}
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100 shadow">
+            <div className="card h-100 shadow"
+            style={{ backgroundColor: "#f8f9fa" }}>
 
               <img
                 src={coderush}
@@ -85,7 +87,8 @@ function Certification() {
 
           {/* Certificate 3 */}
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100 shadow">
+            <div className="card h-100 shadow" 
+            style={{ backgroundColor: "#f8f9fa" }}>
 
               <img
                 src={pythonFSD}

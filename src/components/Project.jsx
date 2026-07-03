@@ -1,3 +1,6 @@
+import emergencySOS from "../assets/image/emergencysos.jpeg";
+import jobTesting from "../assets/image/jobtesting.jpeg";
+import studentData from "../assets/image/studentdata.jpeg";
 function Project() {
     return (
         <>
@@ -13,11 +16,20 @@ function Project() {
                     {/* Project 1 */}
                     <div className="col-lg-4 mb-4">
                         <div className="card h-100 shadow">
+                            <img
+                                src={emergencySOS}
+                                className="card-img-top"
+                                alt="Emergency SOS"
+                                style={{
+                                    height: "220px",
+                                    objectFit:"contain"
+                                }}
+                            />
                             <div className="card-body">
                                 <h5 className="card-title">Emergency SOS</h5>
                                 <p className="text-primary fw-semibold">
-  Team Project
-</p>
+                                    Team Project
+                                </p>
 
                                 <p className="card-text">
                                     A web application that enables users to send emergency alerts and
@@ -49,6 +61,15 @@ function Project() {
                     {/* Project 2 */}
                     <div className="col-lg-4 mb-4">
                         <div className="card h-100 shadow">
+                            <img
+                                src={jobTesting}
+                                className="card-img-top"
+                                alt="Job Testing Application"
+                                style={{
+                                    height: "220px",
+                                    objectFit:"contain"
+                                }}
+                            />
                             <div className="card-body">
                                 <h5 className="card-title">Job Testing Application</h5>
 
@@ -82,6 +103,15 @@ function Project() {
                     {/* Project 3 */}
                     <div className="col-lg-4 mb-4">
                         <div className="card h-100 shadow">
+                            <img
+                                src={studentData}
+                                className="card-img-top"
+                                alt="Student Data Collection System"
+                                style={{
+                                    height: "220px",
+                                    objectFit: "contain"
+                                }}
+                            />
                             <div className="card-body">
                                 <h5 className="card-title">Student Data Collection System</h5>
 
@@ -101,7 +131,7 @@ function Project() {
                                 </ul>
 
                                 <a
-                                    href="#"
+                                    href="https://github.com/Astha0129/student-management-api"
                                     className="btn btn-dark"
                                     target="_blank"
                                     rel="noreferrer"

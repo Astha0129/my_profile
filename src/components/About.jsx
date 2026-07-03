@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="container py-5" id="about">
       <div className="text-center mb-5">
-        <h2 className="fw-bold">About Me</h2>
+        <h1 className="fw-bold">About Me</h1>
         <p className="text-muted">
           Learn more about my background, skills, and passion for web development.
         </p>
@@ -12,17 +12,17 @@ function About() {
 
       <div className="row align-items-center">
         {/* Left Side */}
-        <div className="col-lg-5 text-center mb-4">
+        <div className="col-lg-4 text-center mb-4">
           <img
             src={myimg}
             alt="About"
-            className="img-fluid rounded shadow"
-            style={{ maxWidth: "400px" }}
+            className="img-fluid rounded shadow -lg"
+            style={{ maxWidth: "300px" }}
           />
         </div>
 
         {/* Right Side */}
-        <div className="col-lg-7">
+        <div className="col-lg-8 ps-lg-5">
           <h3 className="fw-bold mb-3">Full Stack Web Developer</h3>
 
           <p className="text-muted">
@@ -47,7 +47,7 @@ function About() {
             </div>
           </div>
 
-          <a href="/resume.pdf" className="btn btn-primary mt-3">
+          <a href="/resume.pdf" className="btn btn-info mt-3">
             Download Resume
           </a>
         </div>
