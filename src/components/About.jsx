@@ -34,7 +34,7 @@ function About() {
 
           <div className="row mt-4">
             <div className="col-md-6">
-              <p><strong>Name:</strong> Astha Dubey</p>
+              <p><strong>Name:</strong> Aastha Dubey</p>
               <p><strong>Email:</strong> asthad431@gmail.com</p>
               <p><strong>Phone:</strong> +91 9336055960 </p>
              
