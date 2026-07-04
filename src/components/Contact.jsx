@@ -56,7 +56,7 @@ function Contact() {
               <p>
                 <FaLinkedin className="me-2 text-primary" />
                 <a
-                  href="https://linkedin.com/in/aastha-dubey/"
+                  href="https://www.linkedin.com/in/aastha-dubey-9a3886383"
                   target="_blank"
                   rel="noreferrer"
                   className="text-decoration-none text-dark"
