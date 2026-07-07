@@ -1,36 +1,47 @@
-export default function Navbar() {
+function Navbar({ navbar }) {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black">
-        <div className="container-fluid">
-          <a className="navbar-brand text-light" href="#">Navbar</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
-              <li className="nav-item ">
-                <a className="nav-link active text-light" aria-current="page" href="#">Home</a>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+      <div className="container-fluid">
+
+        <a className="navbar-brand text-light" href="#">
+          {navbar.brand}
+        </a>
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          className="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            {navbar.links.map((link, index) => (
+              <li className="nav-item" key={index}>
+                <a
+                  className="nav-link active text-light"
+                  href={link.href}
+                >
+                  {link.name}
+                </a>
               </li>
-              <li className="nav-item ">
-                <a className="nav-link active text-light" aria-current="page" href="#">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active text-light" aria-current="page" href="#">Skills</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active text-light" aria-current="page" href="#">Projects</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active text-light" href="#">Certificates</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active text-light" aria-disabled="true">Contact</a>
-              </li>
-            </ul>
-          </div>
+            ))}
+
+          </ul>
         </div>
-      </nav>
-    </>
-  )
+
+      </div>
+    </nav>
+  );
 }
+
+export default Navbar;

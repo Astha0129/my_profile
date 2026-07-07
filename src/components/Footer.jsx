@@ -1,18 +1,18 @@
-function Footer() {
+function Footer({ footer }) {
   return (
     <footer className="bg-dark text-white py-4 mt-5">
       <div className="container text-center">
 
-        <h5 className="fw-bold">Aastha Dubey</h5>
+        <h5 className="fw-bold">{footer.name}</h5>
 
         <p className="mb-2">
-          Full Stack Developer | B.Tech CSE Student
+          {footer.role}
         </p>
 
         <div className="mb-3">
 
           <a
-            href="https://github.com/Astha0129"
+            href={footer.github}
             target="_blank"
             rel="noreferrer"
             className="text-white fs-4 me-3"
@@ -21,7 +21,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/aastha-dubey-9a3886383"
+            href={footer.linkedin}
             target="_blank"
             rel="noreferrer"
             className="text-white fs-4 me-3"
@@ -30,7 +30,7 @@ function Footer() {
           </a>
 
           <a
-            href="mailto:asthad431@gmail.com"
+            href={footer.email}
             className="text-white fs-4"
           >
             <i className="bi bi-envelope-fill"></i>
@@ -39,7 +39,7 @@ function Footer() {
         </div>
 
         <p className="mb-0">
-          © 2026 Aastha Dubey. All Rights Reserved.
+          {footer.copyright}
         </p>
 
       </div>

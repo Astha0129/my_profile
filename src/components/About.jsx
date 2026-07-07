@@ -1,56 +1,61 @@
-import myimg from "../assets/image/about.jpeg";
-
-function About() {
+function About({ about }) {
   return (
     <section className="container py-5" id="about">
       <div className="text-center mb-5">
-        <h1 className="fw-bold">About Me</h1>
+        <h1 className="fw-bold">{about.title}</h1>
+
         <p className="text-muted">
-          Learn more about my background, skills, and passion for web development.
+          {about.subtitle}
         </p>
       </div>
 
       <div className="row align-items-center">
-        {/* Left Side */}
+
         <div className="col-lg-4 text-center mb-4">
           <img
-            src={myimg}
+            src={about.image}
             alt="About"
-            className="img-fluid rounded shadow -lg"
+            className="img-fluid rounded shadow-lg"
             style={{ maxWidth: "300px" }}
           />
         </div>
 
-        {/* Right Side */}
         <div className="col-lg-8 ps-lg-5">
-          <h3 className="fw-bold mb-3">Full Stack Web Developer</h3>
+
+          <h3 className="fw-bold mb-3">
+            {about.role}
+          </h3>
 
           <p className="text-muted">
-            I am a Computer Science Engineering student passionate about
-            developing responsive and user-friendly web applications. I enjoy
-            learning new technologies and building projects using the MERN
-            stack.
+            {about.description}
           </p>
 
           <div className="row mt-4">
+
             <div className="col-md-6">
-              <p><strong>Name:</strong> Aastha Dubey</p>
-              <p><strong>Email:</strong> asthad431@gmail.com</p>
-              <p><strong>Phone:</strong> +91 9336055960 </p>
-             
+              <p><strong>Name:</strong> {about.name}</p>
+              <p><strong>Email:</strong> {about.email}</p>
+              <p><strong>Phone:</strong> {about.phone}</p>
             </div>
 
             <div className="col-md-6">
-              <p><strong>Education:</strong> B.Tech CSE</p>
-              <p><strong>Location:</strong> India</p>
-              <p><strong>Status:</strong> Open to Internships</p>
+              <p><strong>Education:</strong> {about.education}</p>
+              <p><strong>Location:</strong> {about.location}</p>
+              <p><strong>Status:</strong> {about.status}</p>
             </div>
+
           </div>
 
-          <a href="/resume.pdf" className="btn btn-info mt-3">
+          <a
+            href={about.resume}
+            className="btn btn-info mt-3"
+            download
+          >
             Download Resume
           </a>
+
         </div>
+
       </div>
     </section>
   );
